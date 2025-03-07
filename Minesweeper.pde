@@ -54,6 +54,9 @@ public void displayLosingMessage()
     for (int i = 0; i < mines.size(); i++) {
         mines.get(i).setLabel("X");
     }
+    textSize(32);
+    fill(255,0,0);
+    text("LOSS", 200,200);
 }
 public void displayWinningMessage()
 {
@@ -62,6 +65,9 @@ public void displayWinningMessage()
             buttons[row][col].setLabel("WIN");
         }
     }
+    textSize(32);
+    fill(255,255,0);
+    text("WIN", 200,200);
 }
 public boolean isValid(int r, int c)
 {
