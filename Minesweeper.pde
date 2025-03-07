@@ -57,6 +57,7 @@ public void displayLosingMessage()
     textSize(32);
     fill(255,0,0);
     text("LOSS", 200,200);
+    break;
 }
 public void displayWinningMessage()
 {
@@ -68,6 +69,7 @@ public void displayWinningMessage()
     textSize(32);
     fill(255,255,0);
     text("WIN", 200,200);
+    break;
 }
 public boolean isValid(int r, int c)
 {
