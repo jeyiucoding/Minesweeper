@@ -57,7 +57,7 @@ public void displayLosingMessage()
     textSize(32);
     fill(255,0,0);
     text("LOSS", 200,200);
-    break;
+    
 }
 public void displayWinningMessage()
 {
@@ -69,7 +69,7 @@ public void displayWinningMessage()
     textSize(32);
     fill(255,255,0);
     text("WIN", 200,200);
-    break;
+    
 }
 public boolean isValid(int r, int c)
 {
@@ -85,9 +85,6 @@ public int countMines(int row, int col)
       for(int c = col-1; c<=col+1;c++){
         if(isValid(r,c) && mines.contains(buttons[r][c])){
           numMines++;
-  //if(mines.contains(buttons[row][col])){
-  //  numMines--;
-  //}
         }
       }
     }
